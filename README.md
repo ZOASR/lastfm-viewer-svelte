@@ -4,16 +4,16 @@
 > This repository is now part of a monorepo if you want to start developing on it go to the original monorepo [here](https://github.com/ZOASR/lastfm-viewer)
 
 <p align="center" >
-<a href="https://npm.io/package/svelte-lastfm-viewer"><img src="https://img.shields.io/badge/maintained%20with-npm-cc00ff.svg?style=for-the-badge&logo=npm" ></a>
-<a href="https://www.npmjs.com/package/svelte-lastfm-viewer" alt="svelte-lastfm-viewer(npm)">
-<img src="https://img.shields.io/npm/dt/svelte-lastfm-viewer?style=for-the-badge&logo=npm&logoColor=red&label=svelte-lastfm-viewer" /></a>
+
+<a href="https://www.npmjs.com/package/@lastfm-viewer/svelte" alt="@lastfm-viewer/svelte(npm)">
+<img src="https://img.shields.io/npm/dt/@lastfm-viewer/svelte?style=for-the-badge&logo=npm&logoColor=red&label=@lastfm-viewer/svelte" /></a>
 </p>
 
 A sveltejs component to view recent scrobbles for a last.fm user
 
 <p align="center">
-  <img src="https://github.com/ZOASR/svelte-lastfm-viewer/blob/main/images/Preview_1.png" style="border-radius: 10px"/>
-  <img src="https://github.com/ZOASR/svelte-lastfm-viewer/blob/main/images/Preview_2.png" style="border-radius: 10px"/>
+  <img src="https://github.com/ZOASR/lastfm-viewer-svelte/blob/main/images/Preview_1.png" style="border-radius: 10px"/>
+  <img src="https://github.com/ZOASR/lastfm-viewer-svelte/blob/main/images/Preview_2.png" style="border-radius: 10px"/>
 </p>
 
 ## Quick start

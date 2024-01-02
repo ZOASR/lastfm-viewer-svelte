@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [unreleased]
+## [1.1.0] - 2024-01-02
 
 ### Bug Fixes
 
@@ -15,6 +15,10 @@ All notable changes to this project will be documented in this file.
 ### Dev
 
 - Import eslint config
+
+### Update
+
+- V1.1.0
 
 ## [1.0.2] - 2024-01-02
 
