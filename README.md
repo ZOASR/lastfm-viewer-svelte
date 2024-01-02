@@ -55,3 +55,6 @@ if you want to frequently fetch the user's listening info just specify the `upda
 	updateInterval={20000} {/* 20 seconds */}
 />
 ```
+> [!CAUTION]
+> setting the `updateInterval` prop to a low number might subject your api key for termination, to avoid this just use a higher more reasonable number.
+
