@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.lfmvCard a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+.lfmvCard,
+.lfmvCard img,
+.lfmvCard figure,
+.lfmvCard div {
+	animation: born-animate 0.5s ease-in-out alternate;
+}
+
+@keyframes born-animate {
+	from {
+		scale: 0.98;
+		opacity: 0.2;
+		translate: 0 -2%;
+	}
+	to {
+		opacity: 1;
+		scale: 1;
+		translate: 0 0;
+	}
+}
+
+.lfmvCard {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+
+	color-scheme: light dark;
+	color: rgba(255, 255, 255, 0.87);
+	background-color: #242424;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+	@apply glass relative mx-auto box-border flex h-full w-full flex-col rounded-lg p-4 shadow-xl ring-2 ring-slate-950/5;
+
+	figure {
+		@apply mx-auto mb-2 h-auto overflow-hidden rounded-lg border-inherit;
+
+		img {
+			@apply block h-full w-full overflow-hidden object-cover align-middle;
+		}
+	}
+
+	.cardBody {
+		@apply flex h-min flex-col gap-1 drop-shadow-lg filter;
+	}
+
+	.titleSkeleton {
+		@apply mx-auto h-3 w-1/2;
+	}
+
+	.trackTitle {
+		@apply mt-1 text-center text-xs font-bold sm:mx-auto sm:text-base;
+	}
+
+	.infoSpan {
+		@apply flex items-center justify-center gap-1;
+	}
+}
