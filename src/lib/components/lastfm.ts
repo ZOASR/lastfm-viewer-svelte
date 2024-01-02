@@ -3,9 +3,6 @@ import type { Track, TrackInfoRes, UserRecentTracksRes } from './LFMtypes';
 
 import { average } from 'color.js';
 
-import { version as APP_VERSION } from '../../../package.json';
-
-
 export interface Colors {
 	primary: string | undefined;
 	secondary: string | undefined;
