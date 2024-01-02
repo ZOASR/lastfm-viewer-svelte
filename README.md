@@ -9,7 +9,7 @@
 <img src="https://img.shields.io/npm/dt/svelte-lastfm-viewer?style=for-the-badge&logo=npm&logoColor=red&label=svelte-lastfm-viewer" /></a>
 </p>
 
-A sveltejs component to view recent scrobbles for a last.fm user **(This is a sister project to <a href="https://github.com/ZOASR/react-lastfm-viewer">@react-lastfm-viewer</a>)**
+A sveltejs component to view recent scrobbles for a last.fm user
 
 <p align="center">
   <img src="https://github.com/ZOASR/svelte-lastfm-viewer/blob/main/images/Preview_1.png" style="border-radius: 10px"/>
@@ -21,11 +21,11 @@ A sveltejs component to view recent scrobbles for a last.fm user **(This is a si
 Install it:
 
 ```bash
-npm i svelte-lastfm-viewer
+npm i @lastfm-viewer/svelte
 # or
-yarn add svelte-lastfm-viewer
+yarn add @lastfm-viewer/svelte
 # or
-pnpm add svelte-lastfm-viewer
+pnpm add @lastfm-viewer/svelte
 ```
 
 Use it:
@@ -36,7 +36,7 @@ to start using the component you first need to get a last.fm API key from [here]
 
 ```svelte
 <script>
-	import SvelteLastFmViewer from 'svelte-lastfm-viewer';
+	import SvelteLastFmViewer from '@lastfm-viewer/svelte';
 </script>
 
 <SvelteLastFmViewer user="[username]" api_key="[API_KEY]" />
@@ -46,7 +46,7 @@ if you want to frequently fetch the user's listening info just specify the `upda
 
 ```svelte
 <script>
-	import SvelteLastFmViewer from "svelte-lastfm-viewer";
+	import SvelteLastFmViewer from "@lastfm-viewer/svelte";
 </script>
 
 <SvelteLastFmViewer
