@@ -1,8 +1,8 @@
 <script lang="ts">
-	import styles from './PastTracks.module.css';
+	import styles from '@repo/ui/PastTracks.module.css';
 	import LoadingSkeleton from '../LoadingSkeleton/LoadingSkeleton.svelte';
 	import type { Colors } from '..';
-	import type { TrackInfo } from '../lastfm';
+	import type { TrackInfo } from '@repo/utils/lastfm';
 	import { lfmvstore } from '../stores';
 	import Icon from '@iconify/svelte';
 

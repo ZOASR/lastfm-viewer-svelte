@@ -1,8 +1,7 @@
 import { writable } from "svelte/store";
-import type { lfmvcontext_t } from ".";
-import { getLatestTrack, type TrackInfo } from "./lastfm";
+import { getLatestTrack, type TrackInfo } from "@repo/utils/lastfm";
 
-export const lfmvstore = writable<lfmvcontext_t>();
+export const lfmvstore = writable();
 
 let track: TrackInfo | Error;
 

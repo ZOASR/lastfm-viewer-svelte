@@ -1,7 +1,0 @@
-.cardFooter {
-	@apply mt-2 flex w-full justify-between drop-shadow-lg filter;
-
-	.profile {
-		@apply flex items-center gap-2 text-xs;
-	}
-}

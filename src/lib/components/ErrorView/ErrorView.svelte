@@ -1,5 +1,5 @@
 <script lang="ts">
-	import styles from './ErrorView.module.css';
+	import styles from '@repo/ui/ErrorView.module.css';
 
 	const unexpectedErrors = [
 		'NetworkError when attempting to fetch resource.',

@@ -1,15 +1,16 @@
 <script lang="ts">
 	import ErrorView from './ErrorView/ErrorView.svelte';
-	import styles from './LastFMViewer.module.css';
+	import styles from '@repo/ui/LastFMViewer.module.css';
 	import disc from './disc.svg';
-	import type { Colors, TrackInfo } from './lastfm';
+	import type { Colors, TrackInfo } from '@repo/utils/lastfm';
 	import TrackProgressBar from './TrackProgressBar/TrackProgressBar.svelte';
 	import CardFooter from './CardFooter/CardFooter.svelte';
 	import PastTracks from './PastTracks/PastTracks.svelte';
 	import { lfmvstore, useLfmv } from './stores';
 	import LoadingSkeleton from './LoadingSkeleton/LoadingSkeleton.svelte';
 	import Icon from '@iconify/svelte';
-	import { onDestroy, onMount } from 'svelte';
+	import { onMount } from 'svelte';
+	import '@repo/ui';
 
 	export let user: string;
 	export let api_key: string;
