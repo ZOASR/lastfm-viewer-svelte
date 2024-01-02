@@ -1,7 +1,10 @@
 {
 	"name": "svelte-lastfm-viewer",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"private": false,
+	"publishConfig": {
+		"access": "public"
+	},
 	"description": "A Svelte component to view recent scrobbles for a last.fm user",
 	"author": "ZOASR",
 	"license": "GPL-3.0",
@@ -22,7 +25,8 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
-		"format": "prettier --plugin-search-dir . --write ."
+		"format": "prettier --plugin-search-dir . --write .",
+		"changelog": " git-cliff > CHANGELOG.md && git add . && git commit -m \"update: v%npm_package_version%\" && git tag v%npm_package_version% && git push origin v%npm_package_version% && git push origin"
 	},
 	"dependencies": {
 		"svelte": "^3.54.0"
