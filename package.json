@@ -1,6 +1,6 @@
 {
 	"name": "svelte-lastfm-viewer",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"private": false,
 	"description": "A Svelte component to view recent scrobbles for a last.fm user",
 	"author": "ZOASR",
