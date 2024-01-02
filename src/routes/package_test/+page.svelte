@@ -1,7 +1,5 @@
 <script lang="ts">
-	import SvelteLastFmViewer from '$lib/components/SvelteLastFMViewer.svelte';
+	import SvelteLastFmViewer from '../../../package/components/SvelteLastFMViewer.svelte';
 </script>
 
 <SvelteLastFmViewer user="ZOASR" api_key={import.meta.env.VITE_API_KEY} updateInterval={20000} />
-
-<a href="/package_test">go to test</a>
