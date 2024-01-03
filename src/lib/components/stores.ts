@@ -28,7 +28,7 @@ export const useLfmv = (user: string, api_key: string, updateInterval?: number) 
 	};
 	get();
 	let intervalRef: number;
-	if (updateInterval) {
+	if (updateInterval && updateInterval > 0) {
 		intervalRef = setInterval(() => {
 			get();
 		}, updateInterval);

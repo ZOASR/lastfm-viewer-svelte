@@ -14,7 +14,7 @@
 
 	export let user: string;
 	export let api_key: string;
-	export let updateInterval: number;
+	export let updateInterval: number = 0;
 	let intervalref: number | undefined;
 
 	let track: TrackInfo | Error;
