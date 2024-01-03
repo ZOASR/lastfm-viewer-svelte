@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file.
 
+## [unreleased]
+
+### Bug Fixes
+
+- UpdateInterval prop is now optional
+
+### Miscellaneous Tasks
+
+- Changed import order
+
+### Styling
+
+- Modified shadow color for album cover
+- Modified background color for past tracks title
+
+### Dev
+
+- Style changes in dev server
+
+### Update
+
+- V1.1.1
+
 ## [1.1.1] - 2024-01-02
 
 ### Update
