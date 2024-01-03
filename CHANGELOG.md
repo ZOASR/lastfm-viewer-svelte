@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [unreleased]
+## [1.1.2] - 2024-01-03
 
 ### Bug Fixes
 
@@ -24,6 +24,7 @@ All notable changes to this project will be documented in this file.
 ### Update
 
 - V1.1.1
+- V1.1.2
 
 ## [1.1.1] - 2024-01-02
 
