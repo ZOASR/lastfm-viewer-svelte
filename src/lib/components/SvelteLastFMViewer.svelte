@@ -60,7 +60,7 @@
 	{#if track instanceof Error}
 		<ErrorView message={track.message} />
 	{:else}
-		<figure style:box-shadow={`0 0 24px ${colors.secondary}`}>
+		<figure style:box-shadow={`0 0 20px rgb( from ${colors.secondary} r g b / 25%)`}>
 			<LoadingSkeleton fallback={null} className="mx-auto h-[300px] w-[300px]">
 				{#if track.imageUrl}
 					<img src={track.imageUrl} alt="Album Cover" />
