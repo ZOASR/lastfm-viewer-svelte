@@ -46,7 +46,8 @@
 		<LoadingSkeleton className="h-[300px]" fallback={null}>
 			<div
 				class={styles.pastTracks__title}
-				style={`color: ${colors?.secondary}; background: ${colors?.accent};`}
+				style:background={`rgb(from ${colors?.primary} r g b / 50%)`}
+				style:color={colors?.secondary}
 			>
 				Past tracks
 			</div>
