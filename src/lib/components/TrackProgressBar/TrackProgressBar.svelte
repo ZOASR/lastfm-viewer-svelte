@@ -1,8 +1,8 @@
 <script lang="ts">
-	import styles from '@repo/ui/TrackProgressBar.module.css';
 	import type { Colors } from '..';
 	import { lfmvstore } from '../stores';
 	import type { TrackInfo } from '@repo/utils/lastfm';
+	import styles from '@repo/ui/TrackProgressBar.module.css';
 
 	const msToMins = (ms: number) =>
 		Math.floor(ms / 1000 / 60).toLocaleString(undefined, {

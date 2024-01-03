@@ -1,7 +1,9 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
 	import type { Colors } from '@repo/utils/lastfm';
+
 	import styles from '@repo/ui/CardFooter.module.css';
+
 	export let colors: Colors | undefined;
 	export let user: string;
 </script>

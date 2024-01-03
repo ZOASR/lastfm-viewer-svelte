@@ -1,15 +1,17 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+
 	import ErrorView from './ErrorView/ErrorView.svelte';
-	import styles from '@repo/ui/LastFMViewer.module.css';
-	import disc from './disc.svg';
-	import type { Colors, TrackInfo } from '@repo/utils/lastfm';
 	import TrackProgressBar from './TrackProgressBar/TrackProgressBar.svelte';
 	import CardFooter from './CardFooter/CardFooter.svelte';
 	import PastTracks from './PastTracks/PastTracks.svelte';
-	import { lfmvstore, useLfmv } from './stores';
 	import LoadingSkeleton from './LoadingSkeleton/LoadingSkeleton.svelte';
+
+	import type { Colors, TrackInfo } from '@repo/utils/lastfm';
+	import { lfmvstore, useLfmv } from './stores';
 	import Icon from '@iconify/svelte';
-	import { onMount } from 'svelte';
+	import disc from './disc.svg';
+	import styles from '@repo/ui/LastFMViewer.module.css';
 	import '@repo/ui';
 
 	export let user: string;

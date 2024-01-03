@@ -1,9 +1,10 @@
 <script lang="ts">
-	import styles from '@repo/ui/PastTracks.module.css';
 	import LoadingSkeleton from '../LoadingSkeleton/LoadingSkeleton.svelte';
+
 	import type { Colors } from '..';
 	import type { TrackInfo } from '@repo/utils/lastfm';
 	import { lfmvstore } from '../stores';
+	import styles from '@repo/ui/PastTracks.module.css';
 	import Icon from '@iconify/svelte';
 
 	const identity: (x: any) => any = (x: any) => x;
