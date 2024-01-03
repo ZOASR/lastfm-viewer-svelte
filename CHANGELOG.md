@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [unreleased]
+
+### Dev
+
+- Changed publish folder to be ./package
+
+### Update
+
+- V1.1.2
+
 ## [1.1.2] - 2024-01-03
 
 ### Bug Fixes
