@@ -7,12 +7,12 @@
 	import PastTracks from './PastTracks/PastTracks.svelte';
 	import LoadingSkeleton from './LoadingSkeleton/LoadingSkeleton.svelte';
 
-	import type { Colors, TrackInfo } from '@repo/utils/types';
+	import type { Colors, TrackInfo } from '@lastfm-viewer/utils/types';
 	import { lfmvstore, useLfmv } from './stores';
 	import Icon from '@iconify/svelte';
 	import disc from './disc.svg';
-	import styles from '@repo/ui/LastFMViewer.module.css';
-	import '@repo/ui';
+	import styles from '@lastfm-viewer/ui/LastFMViewer.module.css';
+	import '@lastfm-viewer/ui';
 
 	export let user: string;
 	export let api_key: string;

@@ -2,12 +2,12 @@
 	import LoadingSkeleton from '../LoadingSkeleton/LoadingSkeleton.svelte';
 
 	import type { Colors } from '..';
-	import type { TrackInfo } from '@repo/utils/types';
+	import type { TrackInfo } from '@lastfm-viewer/utils/types';
 	import { lfmvstore } from '../stores';
-	import styles from '@repo/ui/PastTracks.module.css';
+	import styles from '@lastfm-viewer/ui/PastTracks.module.css';
 	import Icon from '@iconify/svelte';
 
-	import { cloneArray } from '@repo/utils/utils';
+	import { cloneArray } from '@lastfm-viewer/utils/utils';
 
 	let track: TrackInfo | Error;
 	let colors: Colors;

@@ -1,9 +1,9 @@
 <script lang="ts">
 	import type { Colors } from '..';
 	import { lfmvstore } from '../stores';
-	import type { TrackInfo } from '@repo/utils/types';
-	import styles from '@repo/ui/TrackProgressBar.module.css';
-	import { msToMins, msToSecs } from '@repo/utils/utils';
+	import type { TrackInfo } from '@lastfm-viewer/utils/types';
+	import styles from '@lastfm-viewer/ui/TrackProgressBar.module.css';
+	import { msToMins, msToSecs } from '@lastfm-viewer/utils/utils';
 
 	let track: TrackInfo | Error;
 	let colors: Colors;

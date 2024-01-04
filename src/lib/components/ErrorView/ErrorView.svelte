@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { unexpectedErrors } from '@repo/utils/utils';
-	import styles from '@repo/ui/ErrorView.module.css';
+	import { unexpectedErrors } from '@lastfm-viewer/utils/utils';
+	import styles from '@lastfm-viewer/ui/ErrorView.module.css';
 
 	export let message: string;
 </script>
