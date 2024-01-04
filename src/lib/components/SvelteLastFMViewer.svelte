@@ -7,7 +7,7 @@
 	import PastTracks from './PastTracks/PastTracks.svelte';
 	import LoadingSkeleton from './LoadingSkeleton/LoadingSkeleton.svelte';
 
-	import type { Colors, TrackInfo } from '@repo/utils/lastfm';
+	import type { Colors, TrackInfo } from '@repo/utils/types';
 	import { lfmvstore, useLfmv } from './stores';
 	import Icon from '@iconify/svelte';
 	import disc from './disc.svg';

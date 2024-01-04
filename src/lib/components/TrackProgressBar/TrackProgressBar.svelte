@@ -1,17 +1,9 @@
 <script lang="ts">
 	import type { Colors } from '..';
 	import { lfmvstore } from '../stores';
-	import type { TrackInfo } from '@repo/utils/lastfm';
+	import type { TrackInfo } from '@repo/utils/types';
 	import styles from '@repo/ui/TrackProgressBar.module.css';
-
-	const msToMins = (ms: number) =>
-		Math.floor(ms / 1000 / 60).toLocaleString(undefined, {
-			maximumSignificantDigits: 2
-		});
-	const msToSecs = (ms: number) =>
-		Math.floor((ms / 1000) % 60).toLocaleString(undefined, {
-			maximumSignificantDigits: 2
-		});
+	import { msToMins, msToSecs } from '@repo/utils/utils';
 
 	let track: TrackInfo | Error;
 	let colors: Colors;

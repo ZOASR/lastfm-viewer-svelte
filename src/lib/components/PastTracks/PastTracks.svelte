@@ -2,15 +2,12 @@
 	import LoadingSkeleton from '../LoadingSkeleton/LoadingSkeleton.svelte';
 
 	import type { Colors } from '..';
-	import type { TrackInfo } from '@repo/utils/lastfm';
+	import type { TrackInfo } from '@repo/utils/types';
 	import { lfmvstore } from '../stores';
 	import styles from '@repo/ui/PastTracks.module.css';
 	import Icon from '@iconify/svelte';
 
-	const identity: (x: any) => any = (x: any) => x;
-	function cloneArray(arr: any[]) {
-		return arr.map(identity);
-	}
+	import { cloneArray } from '@repo/utils/utils';
 
 	let track: TrackInfo | Error;
 	let colors: Colors;

@@ -1,11 +1,6 @@
 <script lang="ts">
+	import { unexpectedErrors } from '@repo/utils/utils';
 	import styles from '@repo/ui/ErrorView.module.css';
-
-	const unexpectedErrors = [
-		'NetworkError when attempting to fetch resource.',
-		'Login: User required to be logged in',
-		'Failed to fetch'
-	];
 
 	export let message: string;
 </script>
