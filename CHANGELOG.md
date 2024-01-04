@@ -6,11 +6,25 @@ All notable changes to this project will be documented in this file.
 
 ### Dev
 
+- Moved all utility functions and types to the util package
+- Renamed monorepo to @lastfm-viewer
+
+## [1.1.3.1] - 2024-01-03
+
+### Dev
+
+- Removed unnecesary prepublishOnly script
+
+## [1.1.3] - 2024-01-03
+
+### Dev
+
 - Changed publish folder to be ./package
 
 ### Update
 
 - V1.1.2
+- V1.1.3
 
 ## [1.1.2] - 2024-01-03
 
