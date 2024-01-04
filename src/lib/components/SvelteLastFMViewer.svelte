@@ -90,7 +90,11 @@
 				<LoadingSkeleton className={styles.titleSkeleton} fallback="Album name not available">
 					<span class={styles.infoSpan}>
 						<Icon icon="fa6-solid:compact-disc" />
-						{track?.albumTitle}
+						{#if track.albumTitle}
+							{track?.albumTitle}
+						{:else}
+							Album name not available
+						{/if}
 					</span>
 				</LoadingSkeleton>
 			</div>
