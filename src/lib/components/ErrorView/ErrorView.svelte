@@ -6,7 +6,7 @@
 </script>
 
 <div>
-	{#if unexpectedErrors.includes(message)}
+	{#if !unexpectedErrors.includes(message)}
 		<h1>Hello developer👋, please consider handling the following error before deployment:</h1>
 	{/if}
 	<div class={styles.errorView}>
