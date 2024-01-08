@@ -6,6 +6,16 @@ All notable changes to this project will be documented in this file.
 
 ### Bug Fixes
 
+- Illogical check for error messages
+
+### Refactor
+
+- Scoped daisyui styles to avoid unwanted conflicts
+
+## [1.2.0] - 2024-01-08
+
+### Bug Fixes
+
 - Unexpected "undefined" value in Album title
 
 ### Refactor
@@ -19,6 +29,10 @@ All notable changes to this project will be documented in this file.
 ### Dev
 
 - Unused import
+
+### Update
+
+- V1.2.0
 
 ## [1.1.5] - 2024-01-04
 
