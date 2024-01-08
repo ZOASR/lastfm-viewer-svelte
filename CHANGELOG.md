@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file.
 
+## [unreleased]
+
+### Bug Fixes
+
+- Unexpected "undefined" value in Album title
+
+### Refactor
+
+- Used a simpler array method to display past tracks
+
+### Styling
+
+- Changed album cover shadow to hsla color for better browser compatibility
+
+### Dev
+
+- Unused import
+
+## [1.1.5] - 2024-01-04
+
+### Update
+
+- V1.1.5
+
 ## [1.1.4] - 2024-01-04
 
 ### Dev
