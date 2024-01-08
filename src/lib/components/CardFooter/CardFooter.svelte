@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
-	import type { Colors } from '@lastfm-viewer/utils/lastfm';
+	import type { Colors } from '@lastfm-viewer/utils/types';
 
 	import styles from '@lastfm-viewer/ui/CardFooter.module.css';
 

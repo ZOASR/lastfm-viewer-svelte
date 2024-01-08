@@ -20,22 +20,7 @@
 	let intervalref: number | undefined;
 
 	let track: TrackInfo | Error;
-	track = {
-		artistName: '',
-		albumTitle: '',
-		trackName: '',
-		colors: undefined,
-		duration: 0,
-		imageUrl: undefined,
-		nowplaying: false,
-		pastTracks: []
-	};
-	let colors: Colors;
-	colors = {
-		primary: undefined,
-		secondary: undefined,
-		accent: undefined
-	};
+	let colors: Colors | undefined;
 	lfmvstore.subscribe((val) => {
 		if (val) {
 			track = val.track ? val.track : track;
@@ -60,7 +45,7 @@
 	{#if track instanceof Error}
 		<ErrorView message={track.message} />
 	{:else}
-		<figure style:box-shadow={`0 0 20px rgb( from ${colors.secondary} r g b / 25%)`}>
+		<figure style:box-shadow={`0 0 20px ${colors?.coverShadowColor}`}>
 			<LoadingSkeleton fallback={null} className="mx-auto h-[300px] w-[300px]">
 				{#if track.imageUrl}
 					<img src={track.imageUrl} alt="Album Cover" />
@@ -69,7 +54,7 @@
 				{/if}
 			</LoadingSkeleton>
 		</figure>
-		<div class={styles.cardBody} style:color={colors.secondary}>
+		<div class={styles.cardBody} style:color={colors?.secondary}>
 			<LoadingSkeleton className="mx-auto h-[40px] w-[90%]" fallback={null}>
 				{#if track.nowplaying}
 					<TrackProgressBar />

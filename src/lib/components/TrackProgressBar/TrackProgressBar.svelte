@@ -1,27 +1,12 @@
 <script lang="ts">
-	import type { Colors } from '..';
+	import type { Colors } from '@lastfm-viewer/utils/types';
 	import { lfmvstore } from '../stores';
 	import type { TrackInfo } from '@lastfm-viewer/utils/types';
 	import styles from '@lastfm-viewer/ui/TrackProgressBar.module.css';
 	import { msToMins, msToSecs } from '@lastfm-viewer/utils/utils';
 
 	let track: TrackInfo | Error;
-	let colors: Colors;
-	colors = {
-		primary: undefined,
-		secondary: undefined,
-		accent: undefined
-	};
-	track = {
-		artistName: '',
-		albumTitle: '',
-		trackName: '',
-		colors: undefined,
-		duration: 0,
-		imageUrl: undefined,
-		nowplaying: false,
-		pastTracks: []
-	};
+	let colors: Colors | undefined;
 	lfmvstore.subscribe((val) => {
 		if (val) {
 			track = val.track ? val.track : track;
