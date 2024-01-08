@@ -7,8 +7,6 @@
 	import styles from '@lastfm-viewer/ui/PastTracks.module.css';
 	import Icon from '@iconify/svelte';
 
-	import { cloneArray } from '@lastfm-viewer/utils/utils';
-
 	let track: TrackInfo | Error;
 	let colors: Colors;
 	colors = {
