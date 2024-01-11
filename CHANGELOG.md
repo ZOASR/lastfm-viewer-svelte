@@ -4,6 +4,13 @@
 
 ### Patch Changes
 
+-   Updated dependencies [cb5d2a2]
+    -   @lastfm-viewer/ui@0.0.3
+
+## 1.2.4
+
+### Patch Changes
+
 -   Updated dependencies [fec1ab4]
     -   @lastfm-viewer/utils@0.0.3
 
