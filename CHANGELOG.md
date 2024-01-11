@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.2.4
+
+### Patch Changes
+
+-   Updated dependencies [fec1ab4]
+    -   @lastfm-viewer/utils@0.0.3
+
 ## 1.2.3
 
 ### Patch Changes
