@@ -26,6 +26,49 @@ npm i @lastfm-viewer/svelte
 yarn add @lastfm-viewer/svelte
 # or
 pnpm add @lastfm-viewer/svelte
+# or
+bun i @lastfm-viewer/svelte
+```
+
+Initialize tailwind config:
+
+```bash
+npx @lastfm-viewer/ui init
+# or
+pnpm dlx @lastfm-viewer/ui init
+# or
+yarn dlx @lastfm-viewer/ui init
+# or
+bunx @lastfm-viewer/ui init
+```
+
+---
+
+> [!NOTE]
+> If you're installing the component inside an Astro project do this instead:
+
+```bash
+npm install @astrojs/tailwind tailwindcss
+# or
+pnpm add @astrojs/tailwind tailwindcss
+# or
+yarn add @astrojs/tailwind tailwindcss
+```
+
+Inside `astro.config.mjs` add the css nesting option:
+
+```js
+import { defineConfig } from 'astro/config';
+
+export default defineConfig({
+	integrations: [
+		// ...
+		tailwind({
+			nesting: true
+		})
+		// ...
+	]
+});
 ```
 
 Use it:
@@ -36,7 +79,7 @@ to start using the component you first need to get a last.fm API key from [here]
 
 ```svelte
 <script>
-	import SvelteLastFmViewer from '@lastfm-viewer/svelte';
+	import SvelteLastFmViewer from '@lastfm-viewer/svelte/components/SvelteLastFMViewer.svelte';
 </script>
 
 <SvelteLastFmViewer user="[username]" api_key="[API_KEY]" />
@@ -46,7 +89,7 @@ if you want to frequently fetch the user's listening info just specify the `upda
 
 ```svelte
 <script>
-	import SvelteLastFmViewer from "@lastfm-viewer/svelte";
+	import SvelteLastFmViewer from "@lastfm-viewer/svelte/components/SvelteLastFMViewer.svelte";
 </script>
 
 <SvelteLastFmViewer
