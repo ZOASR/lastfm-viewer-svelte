@@ -9,7 +9,7 @@
 	"description": "A Svelte component to view recent scrobbles for a last.fm user",
 	"author": "ZOASR",
 	"license": "GPL-3.0",
-	"homepage": "https://github.com/ZOASR/svelte-lastfm-viewer.git",
+	"homepage": "https://github.com/ZOASR/lastfm-viewer-svelte.git",
 	"keywords": [
 		"lastfm",
 		"last.fm",
