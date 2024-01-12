@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.2.5
+
+### Patch Changes
+
+-   Updated dependencies [47648c6]
+    -   @lastfm-viewer/tailwind-config@0.0.1
+    -   @lastfm-viewer/ui@0.0.4
+
 ## 1.2.4
 
 ### Patch Changes
