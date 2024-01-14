@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [unreleased]
+## [1.3.0] - 2024-01-14
 
 ### Documentation
 
@@ -15,6 +15,10 @@ All notable changes to this project will be documented in this file.
 ### Dev
 
 - Upgraded to svetekit 2.0.0
+
+### Update
+
+- V1.3.0
 
 ## [1.2.7] - 2024-01-12
 
