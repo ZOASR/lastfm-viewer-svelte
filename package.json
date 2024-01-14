@@ -34,6 +34,10 @@
 		".": {
 			"types": "./dist/index.d.ts",
 			"svelte": "./dist/index.js"
+		},
+		"./SvelteLastFMViewer": {
+			"svelte": "./dist/SvelteLastFMViewer.svelte",
+			"types": "./dist/SvelteLastFMViewer.svelte.d.ts"
 		}
 	},
 	"files": [
