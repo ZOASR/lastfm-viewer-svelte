@@ -8,7 +8,7 @@
 	import LoadingSkeleton from './LoadingSkeleton/LoadingSkeleton.svelte';
 
 	import type { Colors, TrackInfo } from '@lastfm-viewer/utils/types';
-	import { lfmvstore, useLfmv } from './stores';
+	import { lfmvstore, useLfmv } from './stores.js';
 	import Icon from '@iconify/svelte';
 	import disc from './disc.svg';
 	import styles from '@lastfm-viewer/ui/LastFMViewer.module.css';

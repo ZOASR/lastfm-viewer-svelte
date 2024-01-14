@@ -3,7 +3,7 @@
 
 	import type { Colors } from '@lastfm-viewer/utils/types';
 	import type { TrackInfo } from '@lastfm-viewer/utils/types';
-	import { lfmvstore } from '../stores';
+	import { lfmvstore } from '../stores.js';
 	import styles from '@lastfm-viewer/ui/PastTracks.module.css';
 	import Icon from '@iconify/svelte';
 

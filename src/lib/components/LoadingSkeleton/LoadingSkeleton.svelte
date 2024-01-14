@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { lfmvstore } from '../stores';
+	import { lfmvstore } from '../stores.js';
 
 	export let className: string;
 	export let fallback: any | undefined;

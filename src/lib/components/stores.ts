@@ -1,5 +1,6 @@
 import { writable } from 'svelte/store';
-import { getLatestTrack, type Colors, type TrackInfo } from '@lastfm-viewer/utils/lastfm';
+import { getLatestTrack } from '@lastfm-viewer/utils/lastfm';
+import type { Colors, TrackInfo } from '@lastfm-viewer/utils/types';
 
 export const lfmvstore = writable<{
 	track: TrackInfo | Error;
