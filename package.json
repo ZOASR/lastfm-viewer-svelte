@@ -52,6 +52,11 @@
 		"@iconify/svelte": "^3.1.6"
 	},
 	"peerDependencies": {
+		"@lastfm-viewer/utils": "workspace:*",
+		"@lastfm-viewer/tailwind-config": "workspace:*",
+		"@lastfm-viewer/ui": "workspace:*",
+		"@iconify/svelte": "^3.1.6",
+		"@fontsource/inter": "^5.0.16",
 		"svelte": "^4.0.0"
 	},
 	"devDependencies": {

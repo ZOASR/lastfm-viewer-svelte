@@ -42,6 +42,18 @@ yarn dlx @lastfm-viewer/ui init
 bunx @lastfm-viewer/ui init
 ```
 
+Install peer dependencies:
+
+```bash
+npm i -D @lastfm-viewer/utils @lastfm-viewer/tailwind-config @lastfm-viewer/ui @iconify/svelte @fontsource/inter
+# or
+pnpm i -D @lastfm-viewer/utils @lastfm-viewer/tailwind-config @lastfm-viewer/ui @iconify/svelte @fontsource/inter
+# or
+yarn add -D @lastfm-viewer/utils @lastfm-viewer/tailwind-config @lastfm-viewer/ui @iconify/svelte @fontsource/inter
+# or
+bun i -D @lastfm-viewer/utils @lastfm-viewer/tailwind-config @lastfm-viewer/ui @iconify/svelte @fontsource/inter
+```
+
 ---
 
 > [!NOTE]
