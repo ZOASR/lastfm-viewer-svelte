@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
+### Bug Fixes
+
+- Fixed some of daisyui themes are applied to the whole page
+
+## [1.3.1] - 2024-01-14
+
 ### Miscellaneous Tasks
 
 - Added proper file exports to package.json
@@ -11,6 +17,7 @@ All notable changes to this project will be documented in this file.
 ### Update
 
 - V1.3.0
+- V1.3.1
 
 ## [1.3.0] - 2024-01-14
 
