@@ -4,9 +4,19 @@ All notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
+### Miscellaneous Tasks
+
+- Install needed packages as peer dependencies
+
+## [1.3.2] - 2024-01-14
+
 ### Bug Fixes
 
 - Fixed some of daisyui themes are applied to the whole page
+
+### Update
+
+- V1.3.2
 
 ## [1.3.1] - 2024-01-14
 
