@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [unreleased]
+
+### Miscellaneous Tasks
+
+- Added proper file exports to package.json
+
+### Update
+
+- V1.3.0
+
 ## [1.3.0] - 2024-01-14
 
 ### Documentation
