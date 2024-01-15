@@ -1,20 +1,22 @@
 # Changelog
 
-## 1.3.4
-
-### Patch Changes
-
-- Updated dependencies [14c2181]
-  - @lastfm-viewer/tailwind-config@0.0.4
-  - @lastfm-viewer/ui@0.0.9
-
 All notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
+### Bug Fixes
+
+- Tailwind glob pattern now include imported components from the library
+
+## [1.3.3] - 2024-01-14
+
 ### Miscellaneous Tasks
 
 - Install needed packages as peer dependencies
+
+### Update
+
+- V1.3.3
 
 ## [1.3.2] - 2024-01-14
 
