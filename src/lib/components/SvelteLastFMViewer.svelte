@@ -37,9 +37,8 @@
 <link href="https://lastfm.freetls.fastly.net" rel="preconnect" />
 <link href="https://archive.org" rel="preconnect" />
 <link href="https://coverartarchive.org" rel="preconnect" />
-<link href="http://coverartarchive.org" rel="preconnect" />
 <link href="https://musicbrainz.org" rel="preconnect" />
-<link href="http://ws.audioscrobbler.com" rel="preconnect" />
+<link href="https://ws.audioscrobbler.com" rel="preconnect" />
 
 <div class={styles.lfmvCard} style:background={colors?.primary} data-lfmv="dark">
 	{#if track instanceof Error}
