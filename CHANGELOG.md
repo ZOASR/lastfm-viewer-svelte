@@ -6,7 +6,17 @@ All notable changes to this project will be documented in this file.
 
 ### Bug Fixes
 
+- Converted all http links to https
+
+## [1.3.4] - 2024-01-15
+
+### Bug Fixes
+
 - Tailwind glob pattern now include imported components from the library
+
+### Update
+
+- V1.3.4
 
 ## [1.3.3] - 2024-01-14
 
