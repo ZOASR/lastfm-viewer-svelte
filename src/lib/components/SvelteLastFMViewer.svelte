@@ -64,7 +64,7 @@
 					<span class={styles.infoSpan}>{track?.trackName} </span>
 				</LoadingSkeleton>
 			</h1>
-			<div class="flex flex-col gap-2 text-xs">
+			<div class="flex flex-col gap-2">
 				<LoadingSkeleton className={styles.titleSkeleton} fallback="Artist name not available">
 					<span class={styles.infoSpan}>
 						<Icon icon="fa-regular:user" />

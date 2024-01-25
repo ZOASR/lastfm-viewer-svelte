@@ -25,9 +25,9 @@
 </div>
 <div class={styles.bar} style:color={colors?.secondary}>
 	{#if !(track instanceof Error)}
-		<span class="text-xs">00:00</span>
+		<span>00:00</span>
 		<progress class="progress" max={track ? track?.duration / 1000 : 0} />
-		<span class="text-xs">
+		<span>
 			{#if track && track?.duration > 0}
 				{msToMins(track?.duration)}:{msToSecs(track?.duration)}
 			{:else}
