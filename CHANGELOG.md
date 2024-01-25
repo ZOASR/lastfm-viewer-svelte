@@ -4,9 +4,19 @@ All notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
+### Styling
+
+- Changed font sizing to adapt to any page styles
+
+## [1.3.5] - 2024-01-19
+
 ### Bug Fixes
 
 - Converted all http links to https
+
+### Update
+
+- V1.3.5
 
 ## [1.3.4] - 2024-01-15
 
