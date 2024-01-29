@@ -58,4 +58,4 @@
 			</div>
 		{/if}
 	{/if}
-</LoadingSkeleto>
+</LoadingSkeleton>

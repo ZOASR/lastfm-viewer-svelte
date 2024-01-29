@@ -4,9 +4,24 @@ All notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
+### Bug Fixes
+
+- Removed relative color in pasttracks title background
+- Skeleton not shown for pasttracks
+
+### Documentation
+
+- Added project logo and homepage
+
+## [1.3.6] - 2024-01-25
+
 ### Styling
 
 - Changed font sizing to adapt to any page styles
+
+### Update
+
+- V1.3.6
 
 ## [1.3.5] - 2024-01-19
 
