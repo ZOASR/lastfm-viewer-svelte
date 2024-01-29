@@ -17,14 +17,14 @@
 	});
 </script>
 
-{#if track && !(track instanceof Error)}
-	{#if track.pastTracks}
-		{@const pastTracks = track?.pastTracks?.filter((_, idx) => idx !== 0)}
-		<div
-			class={styles.pastTracks}
-			style={`color: ${colors?.secondary};background: ${colors?.accent};`}
-		>
-			<LoadingSkeleton className="h-[300px]" fallback={null}>
+<LoadingSkeleton className="w-full h-[200px]" fallback={undefined}>
+	{#if track && !(track instanceof Error)}
+		{#if track.pastTracks}
+			{@const pastTracks = track?.pastTracks?.filter((_, idx) => idx !== 0)}
+			<div
+				class={styles.pastTracks}
+				style={`color: ${colors?.secondary};background: ${colors?.accent};`}
+			>
 				<div
 					class={styles.pastTracks__title}
 					style:background={colors?.primary}
@@ -46,7 +46,6 @@
 							</a>
 							<span class={styles.scrollable__artist} style={`color: ${colors?.secondary}`}>
 								<Icon icon="fa-regular:user" />
-
 								{track.artist['#text']}
 							</span>
 							<span class={styles.scrollable__date} style={`color: ${colors?.secondary}`}>
@@ -56,7 +55,7 @@
 						</div>
 					</div>
 				{/each}
-			</LoadingSkeleton>
-		</div>
+			</div>
+		{/if}
 	{/if}
-{/if}
+</LoadingSkeleto>
