@@ -6,9 +6,9 @@
 		"access": "public"
 	},
 	"description": "A Svelte component to view recent scrobbles for a last.fm user",
+	"homepage": "https://lastfm-viewer.vercel.app/",
 	"author": "ZOASR",
 	"license": "GPL-3.0",
-	"homepage": "https://github.com/ZOASR/lastfm-viewer-svelte.git",
 	"keywords": [
 		"lastfm",
 		"last.fm",
