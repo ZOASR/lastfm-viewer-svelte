@@ -60,7 +60,9 @@ yarn add -D @lastfm-viewer/utils @lastfm-viewer/tailwind-config @lastfm-viewer/u
 bun i -D @lastfm-viewer/utils @lastfm-viewer/tailwind-config @lastfm-viewer/ui @iconify/svelte @fontsource/inter
 ```
 
----
+<p align="center">
+	<div style="height: 4px; background: #ff3e00; width: 80%; margin: 0 auto; border-radius: 5px"></div>
+ </p>
 
 > [!NOTE]
 > If you're installing the component inside an Astro project do this instead:
@@ -97,17 +99,41 @@ to start using the component you first need to get a last.fm API key from [here]
 
 ```svelte
 <script>
-	import SvelteLastFmViewer from '@lastfm-viewer/svelte/components/SvelteLastFMViewer.svelte';
+	import SvelteLastFmViewer from '@lastfm-viewer/svelte/SvelteLastFMViewer.svelte';
 </script>
 
 <SvelteLastFmViewer user="[username]" api_key="[API_KEY]" />
 ```
 
+<p align="center">
+	<div style="height: 4px; background: #ff3e00; width: 80%; margin: 0 auto; border-radius: 5px"></div>
+ </p>
+
+## Props:
+
+### `user: string` :
+
+last.fm username
+
+<p align="center">
+	<div style="height: 4px; background: #ff3e00; width: 50%; margin: 0 auto; border-radius: 5px"></div>
+ </p>
+
+### `api_key: string` :
+
+your last.fm public api key
+
+<p align="center">
+	<div style="height: 4px; background: #ff3e00; width: 50%; margin: 0 auto; border-radius: 5px"></div>
+ </p>
+
+### `updateInterval?: number` :
+
 if you want to frequently fetch the user's listening info just specify the `updateInterval` prop. (milliseconds) (it takes a number that determines the update interval):
 
 ```svelte
 <script>
-	import SvelteLastFmViewer from "@lastfm-viewer/svelte/components/SvelteLastFMViewer.svelte";
+	import SvelteLastFmViewer from "@lastfm-viewer/svelte/SvelteLastFMViewer.svelte";
 </script>
 
 <SvelteLastFmViewer
@@ -119,3 +145,21 @@ if you want to frequently fetch the user's listening info just specify the `upda
 
 > [!CAUTION]
 > setting the `updateInterval` prop to a low number might subject your api key for termination, to avoid this just use a higher more reasonable number.
+
+<p align="center">
+	<div style="height: 4px; background: #ff3e00; width: 50%; margin: 0 auto; border-radius: 5px"></div>
+ </p>
+
+### `mode?: ("dev" | "prod")` = `"dev"` :
+
+The default value for this prop is: `"dev"`
+
+when using `"dev"` mode any error that haapens will be viewed with the following message above it:
+
+`Hello developer👋, please consider handling the following error before deployment:`
+
+![Error during development](./images/error_dev.png)
+
+when using `"prod"` mode the error is shown as is:
+
+![Error during production](./images/error_prod.png)
