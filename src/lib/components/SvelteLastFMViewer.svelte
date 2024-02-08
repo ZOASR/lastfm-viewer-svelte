@@ -50,16 +50,16 @@
 	{#if track instanceof Error}
 		<ErrorView {mode} message={track.message} />
 	{:else}
-		<figure style:box-shadow={`0 0 20px ${colors?.coverShadowColor}`}>
-			<LoadingSkeleton fallback={null} className="mx-auto h-[300px] w-[300px]">
-				{#if track.imageUrl}
-					<img src={track.imageUrl} alt="Album Cover" />
-				{:else}
-					<img src={disc} alt="Default album cover thumbnail" />
-				{/if}
-			</LoadingSkeleton>
-		</figure>
-		<div class={styles.cardBody} style:color={colors?.secondary}>
+		<div>
+			<figure style:box-shadow={`0 0 20px ${colors?.coverShadowColor}`}>
+				<LoadingSkeleton fallback={null} className="mx-auto h-[300px] w-[300px]">
+					{#if track.imageUrl}
+						<img src={track.imageUrl} alt="Album Cover" />
+					{:else}
+						<img src={disc} alt="Default album cover thumbnail" />
+					{/if}
+				</LoadingSkeleton>
+			</figure>
 			<LoadingSkeleton className="mx-auto h-[40px] w-[90%]" fallback={null}>
 				{#if track.nowplaying}
 					<TrackProgressBar />
@@ -88,6 +88,8 @@
 					</span>
 				</LoadingSkeleton>
 			</div>
+		</div>
+		<div class={styles.cardBody}>
 			<PastTracks />
 			<CardFooter {user} {colors} />
 		</div>
