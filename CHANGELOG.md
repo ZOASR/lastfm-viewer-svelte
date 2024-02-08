@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file.
 
+## [unreleased]
+
+### Bug Fixes
+
+- Added the mode prop for handling errors in error view
+
+### Documentation
+
+- Added better documentation for usage
+
+### Styling
+
+- Added primary color as a style in lfmv component
+- Wrapped figure and track info inside a div for a better looking layout
+
+### Dev
+
+- Added a test component to test for built library
+
+## [1.3.8] - 2024-02-03
+
+### Update
+
+- V1.3.8
+
 ## [1.3.7] - 2024-01-29
 
 ### Bug Fixes
