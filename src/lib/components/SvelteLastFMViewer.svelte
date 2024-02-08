@@ -17,6 +17,7 @@
 	export let user: string;
 	export let api_key: string;
 	export let updateInterval: number = 0;
+	export let mode: 'dev' | 'prod' = 'dev';
 	let intervalref: number | undefined;
 
 	let track: TrackInfo | Error;
@@ -42,7 +43,7 @@
 
 <div class={styles.lfmvCard} style:background={colors?.primary} data-lfmv="dark">
 	{#if track instanceof Error}
-		<ErrorView message={track.message} />
+		<ErrorView {mode} message={track.message} />
 	{:else}
 		<figure style:box-shadow={`0 0 20px ${colors?.coverShadowColor}`}>
 			<LoadingSkeleton fallback={null} className="mx-auto h-[300px] w-[300px]">
