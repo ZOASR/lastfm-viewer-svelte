@@ -41,7 +41,12 @@
 <link href="https://musicbrainz.org" rel="preconnect" />
 <link href="https://ws.audioscrobbler.com" rel="preconnect" />
 
-<div class={styles.lfmvCard} style:background={colors?.primary} data-lfmv="dark">
+<div
+	class={styles.lfmvCard}
+	style:background={colors?.primary}
+	data-lfmv="dark"
+	style:color={colors?.secondary}
+>
 	{#if track instanceof Error}
 		<ErrorView {mode} message={track.message} />
 	{:else}
