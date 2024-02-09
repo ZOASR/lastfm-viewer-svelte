@@ -61,8 +61,8 @@ bun i -D @lastfm-viewer/utils @lastfm-viewer/tailwind-config @lastfm-viewer/ui @
 ```
 
 <p align="center">
-	<div style="height: 4px; background: #ff3e00; width: 80%; margin: 0 auto; border-radius: 5px"></div>
- </p>
+<img width="80%" src="./images/divider.svg" />
+</p>
 
 > [!NOTE]
 > If you're installing the component inside an Astro project do this instead:
@@ -106,8 +106,8 @@ to start using the component you first need to get a last.fm API key from [here]
 ```
 
 <p align="center">
-	<div style="height: 4px; background: #ff3e00; width: 80%; margin: 0 auto; border-radius: 5px"></div>
- </p>
+<img width="80%" src="./images/divider.svg" />
+</p>
 
 ## Props:
 
@@ -116,16 +116,16 @@ to start using the component you first need to get a last.fm API key from [here]
 last.fm username
 
 <p align="center">
-	<div style="height: 4px; background: #ff3e00; width: 50%; margin: 0 auto; border-radius: 5px"></div>
- </p>
+<img width="50%" src="./images/divider.svg" />
+</p>
 
 ### `api_key: string` :
 
 your last.fm public api key
 
 <p align="center">
-	<div style="height: 4px; background: #ff3e00; width: 50%; margin: 0 auto; border-radius: 5px"></div>
- </p>
+<img width="50%" src="./images/divider.svg" />
+</p>
 
 ### `updateInterval?: number` :
 
@@ -147,8 +147,8 @@ if you want to frequently fetch the user's listening info just specify the `upda
 > setting the `updateInterval` prop to a low number might subject your api key for termination, to avoid this just use a higher more reasonable number.
 
 <p align="center">
-	<div style="height: 4px; background: #ff3e00; width: 50%; margin: 0 auto; border-radius: 5px"></div>
- </p>
+<img width="50%" src="./images/divider.svg" />
+</p>
 
 ### `mode?: ("dev" | "prod")` = `"dev"` :
 
