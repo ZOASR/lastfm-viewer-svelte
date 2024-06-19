@@ -1,5 +1,5 @@
 <script lang="ts">
-	import SvelteLastFmViewer from '../../../dist/components/SvelteLastFMViewer.svelte';
+	import SvelteLastFmViewer from '$lib/components/SvelteLastFMViewer.svelte';
 </script>
 
 <div id="app">
