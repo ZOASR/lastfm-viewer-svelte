@@ -16,6 +16,10 @@ All notable changes to this project will be documented in this file.
 
 - Upgraded packages
 
+### Update
+
+- V2.0.0
+
 ## [2.0.0] - 2024-02-08
 
 ### Bug Fixes
