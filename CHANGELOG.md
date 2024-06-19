@@ -6,6 +6,20 @@ All notable changes to this project will be documented in this file.
 
 ### Bug Fixes
 
+- Wrong path for test svelte component
+
+### Documentation
+
+- Added svg as a divider instead of html div
+
+### Build
+
+- Upgraded packages
+
+## [2.0.0] - 2024-02-08
+
+### Bug Fixes
+
 - Added the mode prop for handling errors in error view
 
 ### Documentation
@@ -20,6 +34,10 @@ All notable changes to this project will be documented in this file.
 ### Dev
 
 - Added a test component to test for built library
+
+### Update
+
+- V2.0.0
 
 ## [1.3.8] - 2024-02-03
 
