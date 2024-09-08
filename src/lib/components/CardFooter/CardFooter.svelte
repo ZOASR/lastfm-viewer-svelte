@@ -9,7 +9,7 @@
 </script>
 
 <div style={`color: ${colors?.secondary}`} class={styles.cardFooter}>
-	<span class="flex gap-2">
+	<span class="flex gap-2 items-center">
 		<a href="https://www.last.fm/" target="_blank" class="h-min self-center">
 			<Icon icon="fa-brands:lastfm-square" />
 		</a>
@@ -18,7 +18,12 @@
 			<Icon icon="simple-icons:musicbrainz" />
 		</a>
 	</span>
-	<a class={styles.profile} href={`https://www.last.fm/user/${user}`}>
+	<a
+		class={styles.profile}
+		style:color={colors?.primary}
+		style:background={colors?.secondary}
+		href={`https://www.last.fm/user/${user}`}
+	>
 		<Icon icon="fa-regular:user" />
 		{user}
 	</a>
