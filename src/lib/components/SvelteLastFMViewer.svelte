@@ -10,7 +10,6 @@
 	import type { Colors, TrackInfo } from '@lastfm-viewer/utils/types';
 	import { lfmvstore, useLfmv } from './stores.js';
 	import Icon from '@iconify/svelte';
-	import disc from './disc.svg';
 	import styles from '@lastfm-viewer/ui/LastFMViewer.module.css';
 	import '@lastfm-viewer/ui';
 
@@ -51,7 +50,7 @@
 		<ErrorView {mode} message={track.message} />
 	{:else}
 		<div>
-			<figure style:box-shadow={`0 0 20px ${colors?.coverShadowColor}`}>
+			<figure style:filter={`drop-shadow(0 0 20px ${colors?.coverShadowColor})`}>
 				<LoadingSkeleton fallback={null} className="mx-auto h-[300px] w-[300px]">
 					{#if track.imageUrl}
 						<img src={track.imageUrl} alt="Album Cover" />
