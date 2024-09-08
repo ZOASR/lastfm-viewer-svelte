@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## [unreleased]
+
+### Ui
+
+- Replaced default album cover with an icon
+- Replaced drop-shadow in ablum cover with a drop-shadow
+- Fixed card footer component layout and changed user icon styles
+
+## [2.0.3] - 2024-07-15
+
+### Update
+
+- V2.0.3
+
 ## [2.0.2] - 2024-06-19
 
 ### Update
