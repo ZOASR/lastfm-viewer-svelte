@@ -56,7 +56,10 @@
 					{#if track.imageUrl}
 						<img src={track.imageUrl} alt="Album Cover" />
 					{:else}
-						<img src={disc} alt="Default album cover thumbnail" />
+						<div class:!animate-spin-slow={track.nowplaying} class="h-[300px]">
+							<Icon icon="bi:disc-fill" class="w-full h-full" />
+						</div>
+						<!-- <img src={disc} alt="Default album cover thumbnail" /> -->
 					{/if}
 				</LoadingSkeleton>
 			</figure>
