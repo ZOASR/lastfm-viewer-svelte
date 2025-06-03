@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
+### Documentation
+
+- Updated readme to reflect recent style importing changes in 7a35481
+
+### Breaking
+
+- Transfered scoping to postcss-scope plugin and removed css modules
+
+## [2.0.5] - 2025-06-03
+
 ### Dev
 
 - Served a dummy json file to avoid a 404 in chrome development
@@ -16,6 +26,7 @@ All notable changes to this project will be documented in this file.
 ### Update
 
 - V2.0.4
+- V2.0.5
 
 ## [2.0.4] - 2024-09-08
 
