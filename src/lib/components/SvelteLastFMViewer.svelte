@@ -46,57 +46,59 @@
 	data-lfmv="dark"
 	style:color={colors?.secondary}
 >
-	{#if track instanceof Error}
-		<ErrorView {mode} message={track.message} />
-	{:else}
-		<div>
-			<figure style:filter={`drop-shadow(0 0 20px ${colors?.coverShadowColor})`}>
-				<LoadingSkeleton fallback={null} className="mx-auto h-[300px] w-[300px]">
-					{#if track.imageUrl}
-						<img src={track.imageUrl} alt="Album Cover" />
-					{:else}
-						<div
-							class:!animate-spin-slow={track.nowplaying}
-							class="h-[300px] [color:var(--default-secondary)]"
-						>
-							<Icon icon="bi:disc-fill" class="w-full h-full" />
-						</div>
-						<!-- <img src={disc} alt="Default album cover thumbnail" /> -->
+	<div data-lfmv>
+		{#if track instanceof Error}
+			<ErrorView {mode} message={track.message} />
+		{:else}
+			<div>
+				<figure style:filter={`drop-shadow(0 0 20px ${colors?.coverShadowColor})`}>
+					<LoadingSkeleton fallback={null} className="mx-auto h-[300px] w-[300px]">
+						{#if track.imageUrl}
+							<img src={track.imageUrl} alt="Album Cover" />
+						{:else}
+							<div
+								class:!animate-spin-slow={track.nowplaying}
+								class="h-[300px] [color:var(--default-secondary)]"
+							>
+								<Icon icon="bi:disc-fill" class="w-full h-full" />
+							</div>
+							<!-- <img src={disc} alt="Default album cover thumbnail" /> -->
+						{/if}
+					</LoadingSkeleton>
+				</figure>
+				<LoadingSkeleton className="mx-auto h-[40px] w-[90%]" fallback={null}>
+					{#if track.nowplaying}
+						<TrackProgressBar />
 					{/if}
 				</LoadingSkeleton>
-			</figure>
-			<LoadingSkeleton className="mx-auto h-[40px] w-[90%]" fallback={null}>
-				{#if track.nowplaying}
-					<TrackProgressBar />
-				{/if}
-			</LoadingSkeleton>
-			<h1 class={styles.trackTitle}>
-				<LoadingSkeleton className={styles.titleSkeleton} fallback="Track title not available">
-					<span class={styles.infoSpan}>{track?.trackName} </span>
-				</LoadingSkeleton>
-			</h1>
-			<div class="flex flex-col gap-2">
-				<LoadingSkeleton className={styles.titleSkeleton} fallback="Artist name not available">
-					<span class={styles.infoSpan}>
-						<Icon icon="fa-regular:user" />
-						{track?.artistName}
-					</span>
-				</LoadingSkeleton>
-				<LoadingSkeleton className={styles.titleSkeleton} fallback="Album name not available">
-					<span class={styles.infoSpan}>
-						<Icon icon="fa6-solid:compact-disc" />
-						{#if track.albumTitle}
-							{track?.albumTitle}
-						{:else}
-							Album name not available
-						{/if}
-					</span>
-				</LoadingSkeleton>
+				<h1 class={styles.trackTitle}>
+					<LoadingSkeleton className={styles.titleSkeleton} fallback="Track title not available">
+						<span class={styles.infoSpan}>{track?.trackName} </span>
+					</LoadingSkeleton>
+				</h1>
+				<div class="flex flex-col gap-2">
+					<LoadingSkeleton className={styles.titleSkeleton} fallback="Artist name not available">
+						<span class={styles.infoSpan}>
+							<Icon icon="fa-regular:user" />
+							{track?.artistName}
+						</span>
+					</LoadingSkeleton>
+					<LoadingSkeleton className={styles.titleSkeleton} fallback="Album name not available">
+						<span class={styles.infoSpan}>
+							<Icon icon="fa6-solid:compact-disc" />
+							{#if track.albumTitle}
+								{track?.albumTitle}
+							{:else}
+								Album name not available
+							{/if}
+						</span>
+					</LoadingSkeleton>
+				</div>
 			</div>
-		</div>
-		<div class={styles.cardBody}>
-			<PastTracks />
-			<CardFooter {user} {colors} />
-		</div>
-	{/if}
+			<div class={styles.cardBody}>
+				<PastTracks />
+				<CardFooter {user} {colors} />
+			</div>
+		{/if}
+	</div>
 </div>
