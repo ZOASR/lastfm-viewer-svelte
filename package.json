@@ -1,6 +1,6 @@
 {
 	"name": "@lastfm-viewer/svelte",
-	"version": "2.0.4",
+	"version": "2.0.5",
 	"private": false,
 	"publishConfig": {
 		"access": "public"
