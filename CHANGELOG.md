@@ -4,11 +4,26 @@ All notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
+### Dev
+
+- Served a dummy json file to avoid a 404 in chrome development
+
+### Ui
+
+- Adapting colors based on prefered color scheme (dark&light)
+- Fixed a scoping issue that causes tailwind v3 styles to clash with v4
+
+## [2.0.4] - 2024-09-08
+
 ### Ui
 
 - Replaced default album cover with an icon
 - Replaced drop-shadow in ablum cover with a drop-shadow
 - Fixed card footer component layout and changed user icon styles
+
+### Update
+
+- V2.0.4
 
 ## [2.0.3] - 2024-07-15
 
