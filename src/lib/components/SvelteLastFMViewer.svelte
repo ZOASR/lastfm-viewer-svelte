@@ -10,8 +10,6 @@
 	import type { Colors, TrackInfo } from '@lastfm-viewer/utils/types';
 	import { lfmvstore, useLfmv } from './stores.js';
 	import Icon from '@iconify/svelte';
-	import styles from '@lastfm-viewer/ui/LastFMViewer.module.css';
-	import '@lastfm-viewer/ui';
 
 	export let user: string;
 	export let api_key: string;
@@ -41,7 +39,7 @@
 <link href="https://ws.audioscrobbler.com" rel="preconnect" />
 
 <div
-	class={styles.lfmvCard}
+	class={`lfmvCard`}
 	style:background={colors?.primary}
 	data-lfmv="dark"
 	style:color={colors?.secondary}
@@ -71,20 +69,20 @@
 						<TrackProgressBar />
 					{/if}
 				</LoadingSkeleton>
-				<h1 class={styles.trackTitle}>
-					<LoadingSkeleton className={styles.titleSkeleton} fallback="Track title not available">
-						<span class={styles.infoSpan}>{track?.trackName} </span>
+				<h1 class={`trackTitle`}>
+					<LoadingSkeleton className={`titleSkeleton`} fallback="Track title not available">
+						<span class={`infoSpan`}>{track?.trackName} </span>
 					</LoadingSkeleton>
 				</h1>
 				<div class="flex flex-col gap-2">
-					<LoadingSkeleton className={styles.titleSkeleton} fallback="Artist name not available">
-						<span class={styles.infoSpan}>
+					<LoadingSkeleton className={`titleSkeleton`} fallback="Artist name not available">
+						<span class={`infoSpan`}>
 							<Icon icon="fa-regular:user" />
 							{track?.artistName}
 						</span>
 					</LoadingSkeleton>
-					<LoadingSkeleton className={styles.titleSkeleton} fallback="Album name not available">
-						<span class={styles.infoSpan}>
+					<LoadingSkeleton className={`titleSkeleton`} fallback="Album name not available">
+						<span class={`infoSpan`}>
 							<Icon icon="fa6-solid:compact-disc" />
 							{#if track.albumTitle}
 								{track?.albumTitle}
@@ -95,7 +93,7 @@
 					</LoadingSkeleton>
 				</div>
 			</div>
-			<div class={styles.cardBody}>
+			<div class={`cardBody`}>
 				<PastTracks />
 				<CardFooter {user} {colors} />
 			</div>

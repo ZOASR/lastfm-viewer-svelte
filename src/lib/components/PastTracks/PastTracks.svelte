@@ -4,7 +4,6 @@
 	import type { Colors } from '@lastfm-viewer/utils/types';
 	import type { TrackInfo } from '@lastfm-viewer/utils/types';
 	import { lfmvstore } from '../stores.js';
-	import styles from '@lastfm-viewer/ui/PastTracks.module.css';
 	import Icon from '@iconify/svelte';
 
 	let track: TrackInfo | Error;
@@ -22,33 +21,33 @@
 		{#if track.pastTracks}
 			{@const pastTracks = track?.pastTracks?.filter((_, idx) => idx !== 0)}
 			<div
-				class={styles.pastTracks}
+				class={`pastTracks`}
 				style={`color: ${colors?.secondary};background: ${colors?.accent};`}
 			>
 				<div
-					class={styles.pastTracks__title}
+					class={`pastTracks__title`}
 					style:background={colors?.primary}
 					style:color={colors?.secondary}
 				>
 					Past tracks
 				</div>
 				{#each pastTracks as track}
-					<div class={styles.pastTracks__track}>
+					<div class={`pastTracks__track`}>
 						<div class="divider m-0.5 h-min" />
-						<div class={styles.scrollable}>
+						<div class={`scrollable`}>
 							<a
 								href={track.url}
 								target="_blank"
-								class={styles.pastTracks__trackTitle}
+								class={`pastTracks__trackTitle`}
 								style={`color: ${colors?.secondary}`}
 							>
 								{track.name}
 							</a>
-							<span class={styles.scrollable__artist} style={`color: ${colors?.secondary}`}>
+							<span class={`scrollable__artist`} style={`color: ${colors?.secondary}`}>
 								<Icon icon="fa-regular:user" />
 								{track.artist['#text']}
 							</span>
-							<span class={styles.scrollable__date} style={`color: ${colors?.secondary}`}>
+							<span class={`scrollable__date`} style={`color: ${colors?.secondary}`}>
 								<Icon icon="mingcute:calendar-fill" />
 								{track.date['#text']}
 							</span>

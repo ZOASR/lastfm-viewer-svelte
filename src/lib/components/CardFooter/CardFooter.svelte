@@ -2,13 +2,11 @@
 	import Icon from '@iconify/svelte';
 	import type { Colors } from '@lastfm-viewer/utils/types';
 
-	import styles from '@lastfm-viewer/ui/CardFooter.module.css';
-
 	export let colors: Colors | undefined;
 	export let user: string;
 </script>
 
-<div style={`color: ${colors?.secondary}`} class={styles.cardFooter}>
+<div style={`color: ${colors?.secondary}`} class={`cardFooter`}>
 	<span class="flex gap-2 items-center">
 		<a href="https://www.last.fm/" target="_blank" class="h-min self-center">
 			<Icon icon="fa-brands:lastfm-square" />
@@ -19,7 +17,7 @@
 		</a>
 	</span>
 	<a
-		class={styles.profile}
+		class={`profile`}
 		style:color={colors?.primary}
 		style:background={colors?.secondary}
 		href={`https://www.last.fm/user/${user}`}

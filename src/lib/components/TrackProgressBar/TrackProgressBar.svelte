@@ -2,7 +2,6 @@
 	import type { Colors } from '@lastfm-viewer/utils/types';
 	import { lfmvstore } from '../stores';
 	import type { TrackInfo } from '@lastfm-viewer/utils/types';
-	import styles from '@lastfm-viewer/ui/TrackProgressBar.module.css';
 	import { msToMins, msToSecs } from '@lastfm-viewer/utils/utils';
 
 	let track: TrackInfo | Error;
@@ -15,15 +14,15 @@
 	});
 </script>
 
-<div class={styles.trackProgress}>
-	<span class={styles.nowplaying}> Now Playing</span>
-	<div class={styles.icon}>
-		<span style:background={colors?.secondary} class={styles.musicbar} />
-		<span style:background={colors?.secondary} class={styles.musicbar} />
-		<span style:background={colors?.secondary} class={styles.musicbar} />
+<div class={`trackProgress`}>
+	<span class={`nowplaying`}> Now Playing</span>
+	<div class={`icon`}>
+		<span style:background={colors?.secondary} class={`musicbar`} />
+		<span style:background={colors?.secondary} class={`musicbar`} />
+		<span style:background={colors?.secondary} class={`musicbar`} />
 	</div>
 </div>
-<div class={styles.bar} style:color={colors?.secondary}>
+<div class={`bar`} style:color={colors?.secondary}>
 	{#if !(track instanceof Error)}
 		<span>00:00</span>
 		<progress class="progress" max={track ? track?.duration / 1000 : 0} />
