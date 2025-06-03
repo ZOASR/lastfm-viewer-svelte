@@ -36,60 +36,21 @@ pnpm add @lastfm-viewer/svelte
 bun i @lastfm-viewer/svelte
 ```
 
-Initialize tailwind config:
-
-```bash
-npx @lastfm-viewer/ui init
-# or
-pnpm dlx @lastfm-viewer/ui init
-# or
-yarn dlx @lastfm-viewer/ui init
-# or
-bunx @lastfm-viewer/ui init
-```
-
 Install peer dependencies:
 
 ```bash
-npm i -D @lastfm-viewer/utils @lastfm-viewer/tailwind-config @lastfm-viewer/ui @iconify/svelte @fontsource/inter
+npm i -D @lastfm-viewer/ui
 # or
-pnpm i -D @lastfm-viewer/utils @lastfm-viewer/tailwind-config @lastfm-viewer/ui @iconify/svelte @fontsource/inter
+pnpm i -D @lastfm-viewer/ui
 # or
-yarn add -D @lastfm-viewer/utils @lastfm-viewer/tailwind-config @lastfm-viewer/ui @iconify/svelte @fontsource/inter
+yarn add -D @lastfm-viewer/ui
 # or
-bun i -D @lastfm-viewer/utils @lastfm-viewer/tailwind-config @lastfm-viewer/ui @iconify/svelte @fontsource/inter
+bun i -D @lastfm-viewer/ui
 ```
 
 <p align="center">
 <img width="80%" src="./images/divider.svg" />
 </p>
-
-> [!NOTE]
-> If you're installing the component inside an Astro project do this instead:
-
-```bash
-npm install @astrojs/tailwind tailwindcss
-# or
-pnpm add @astrojs/tailwind tailwindcss
-# or
-yarn add @astrojs/tailwind tailwindcss
-```
-
-Inside `astro.config.mjs` add the css nesting option:
-
-```js
-import { defineConfig } from 'astro/config';
-
-export default defineConfig({
-	integrations: [
-		// ...
-		tailwind({
-			nesting: true
-		})
-		// ...
-	]
-});
-```
 
 Use it:
 
@@ -100,6 +61,12 @@ to start using the component you first need to get a last.fm API key from [here]
 ```svelte
 <script>
 	import SvelteLastFmViewer from '@lastfm-viewer/svelte/SvelteLastFMViewer.svelte';
+	import '@lastfm-viewer/ui/styles';
+	import '@lastfm-viewer/ui/styles/LastFMViewer.css';
+	import '@lastfm-viewer/ui/styles/PastTracks.css';
+	import '@lastfm-viewer/ui/styles/TrackProgressBar.css';
+	import '@lastfm-viewer/ui/styles/CardFooter.css';
+	import '@lastfm-viewer/ui/styles/ErrorView.css';
 </script>
 
 <SvelteLastFmViewer user="[username]" api_key="[API_KEY]" />
