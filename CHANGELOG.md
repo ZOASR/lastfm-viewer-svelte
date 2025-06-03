@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [unreleased]
+## [3.0.0] - 2025-06-03
 
 ### Documentation
 
@@ -11,6 +11,10 @@ All notable changes to this project will be documented in this file.
 ### Breaking
 
 - Transfered scoping to postcss-scope plugin and removed css modules
+
+### Update
+
+- V3.0.0
 
 ## [2.0.5] - 2025-06-03
 
