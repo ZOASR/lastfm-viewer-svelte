@@ -69,7 +69,7 @@ to start using the component you first need to get a last.fm API key from [here]
 	import '@lastfm-viewer/ui/styles/ErrorView.css';
 </script>
 
-<SvelteLastFmViewer user="[username]" api_key="[API_KEY]" />
+<SvelteLastFmViewer user="[username]" />
 ```
 
 <p align="center">
@@ -86,14 +86,6 @@ last.fm username
 <img width="50%" src="./images/divider.svg" />
 </p>
 
-### `api_key: string` :
-
-your last.fm public api key
-
-<p align="center">
-<img width="50%" src="./images/divider.svg" />
-</p>
-
 ### `updateInterval?: number` :
 
 if you want to frequently fetch the user's listening info just specify the `updateInterval` prop. (milliseconds) (it takes a number that determines the update interval):
@@ -105,7 +97,6 @@ if you want to frequently fetch the user's listening info just specify the `upda
 
 <SvelteLastFmViewer
 	user="[username]"
-	api_key="[API_KEY]"
 	updateInterval={20000} {/* 20 seconds */}
 />
 ```
