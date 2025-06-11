@@ -4,10 +4,20 @@ All notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
+### Documentation
+
+- Update README to remove api_key references from SvelteLastFmViewer usage
+
+## [4.0.0] - 2025-06-11
+
 ### Refactor
 
 - Removed api_key parameter from useLfmv and SvelteLastFmViewer components
 - Change intervalRef type to ReturnType<typeof setInterval> in stores and SvelteLastFMViewer components
+
+### Update
+
+- V4.0.0
 
 ## [3.0.3] - 2025-06-04
 
