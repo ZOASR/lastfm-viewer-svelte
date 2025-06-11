@@ -1,4 +1,4 @@
-# @lastfm-viewer/svelte
+@lastfm-viewer/utils# @lastfm-viewer/svelte
 
 > [!NOTE]
 > This repository is now part of a monorepo if you want to start developing on it go to the original monorepo [here](https://github.com/ZOASR/lastfm-viewer)
@@ -39,13 +39,13 @@ bun i @lastfm-viewer/svelte
 Install peer dependencies:
 
 ```bash
-npm i -D @lastfm-viewer/ui
+npm i -D @lastfm-viewer/ui @lastfm-viewer/utils
 # or
-pnpm i -D @lastfm-viewer/ui
+pnpm i -D @lastfm-viewer/ui @lastfm-viewer/utils
 # or
-yarn add -D @lastfm-viewer/ui
+yarn add -D @lastfm-viewer/ui @lastfm-viewer/utils
 # or
-bun i -D @lastfm-viewer/ui
+bun i -D @lastfm-viewer/ui @lastfm-viewer/utils
 ```
 
 <p align="center">
