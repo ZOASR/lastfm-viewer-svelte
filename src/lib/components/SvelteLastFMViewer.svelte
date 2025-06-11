@@ -1,5 +1,8 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import type { SvelteComponent } from 'svelte';
+	import Iconify from '@iconify/svelte';
+	const Icon = Iconify as unknown as typeof SvelteComponent<{ icon: string; class?: string }>;
 
 	import ErrorView from './ErrorView/ErrorView.svelte';
 	import TrackProgressBar from './TrackProgressBar/TrackProgressBar.svelte';
@@ -9,12 +12,11 @@
 
 	import type { Colors, TrackInfo } from '@lastfm-viewer/utils/types';
 	import { lfmvstore, useLfmv } from './stores.js';
-	import Icon from '@iconify/svelte';
 
 	export let user: string;
 	export let updateInterval: number = 0;
 	export let mode: 'dev' | 'prod' = 'dev';
-	let intervalref: number | undefined;
+	let intervalref: ReturnType<typeof setInterval> | undefined;
 
 	let track: TrackInfo | Error;
 	let colors: Colors | undefined;
@@ -53,7 +55,7 @@
 						{:else}
 							<div
 								class:!animate-spin-slow={track.nowplaying}
-								class="h-[300px] [color:var(--default-secondary)]"
+								class="h-[100px] [color:var(--default-secondary)] sm:h-[300px]"
 							>
 								<Icon icon="bi:disc-fill" class="w-full h-full" />
 							</div>
