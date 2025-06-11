@@ -3,12 +3,7 @@
 </script>
 
 <div id="app">
-	<SvelteLastFmViewer
-		user="ZOASR"
-		api_key="very_wrong_api_key"
-		updateInterval={20000}
-		mode="prod"
-	/>
+	<SvelteLastFmViewer user="ZOASR" updateInterval={20000} mode="prod" />
 </div>
 
 <style>

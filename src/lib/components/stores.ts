@@ -10,9 +10,9 @@ export const lfmvstore = writable<{
 
 let track: TrackInfo | Error;
 
-export const useLfmv = (user: string, api_key: string, updateInterval?: number) => {
+export const useLfmv = (user: string, updateInterval?: number) => {
 	const get = async () => {
-		track = await getLatestTrack(user, api_key);
+		track = await getLatestTrack(user);
 		if (track instanceof Error) {
 			lfmvstore.set({
 				track: track,

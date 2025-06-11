@@ -12,7 +12,6 @@
 	import Icon from '@iconify/svelte';
 
 	export let user: string;
-	export let api_key: string;
 	export let updateInterval: number = 0;
 	export let mode: 'dev' | 'prod' = 'dev';
 	let intervalref: number | undefined;
@@ -27,16 +26,14 @@
 	});
 
 	onMount(() => {
-		intervalref = useLfmv(user, api_key, updateInterval);
+		intervalref = useLfmv(user, updateInterval);
 		return () => clearInterval(intervalref);
 	});
 </script>
 
 <link href="https://lastfm.freetls.fastly.net" rel="preconnect" />
-<link href="https://archive.org" rel="preconnect" />
 <link href="https://coverartarchive.org" rel="preconnect" />
-<link href="https://musicbrainz.org" rel="preconnect" />
-<link href="https://ws.audioscrobbler.com" rel="preconnect" />
+<link href="https://lastfm-viewer-api.cloudflare-untying955.workers.dev" rel="preconnect" />
 
 <div
 	class={`lfmvCard`}
