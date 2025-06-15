@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let message: string;
+	export let error: Error;
 	export let mode: 'prod' | 'dev';
 </script>
 
@@ -8,7 +8,7 @@
 		<h1>Hello developer👋, please consider handling the following error before deployment:</h1>
 	{/if}
 	<div class={`errorView`}>
-		<span>Error</span>
-		{message}
+		<span>{error.name}</span>
+		{error.message}
 	</div>
 </div>

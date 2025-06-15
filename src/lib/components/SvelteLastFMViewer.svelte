@@ -65,7 +65,7 @@
 >
 	<div data-lfmv>
 		{#if track instanceof Error}
-			<ErrorView {mode} message={track.message} />
+			<ErrorView {mode} error={track} />
 		{:else}
 			<div>
 				<figure style:filter={`drop-shadow(0 0 20px ${colors?.coverShadowColor})`}>
