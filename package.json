@@ -47,20 +47,19 @@
 		"!dist/**/*.spec.*"
 	],
 	"dependencies": {
-		"@iconify/svelte": "^3.1.6",
 		"@lastfm-viewer/tailwind-config": "workspace:*",
 		"@lastfm-viewer/ui": "workspace:*",
 		"@lastfm-viewer/utils": "workspace:*"
 	},
 	"peerDependencies": {
 		"@fontsource/inter": "^5.0.16",
-		"@iconify/svelte": "^3.1.6",
 		"@lastfm-viewer/tailwind-config": "workspace:*",
 		"@lastfm-viewer/ui": "workspace:*",
 		"@lastfm-viewer/utils": "workspace:*",
 		"svelte": "^4.0.0"
 	},
 	"devDependencies": {
+		"@iconify/svelte": "^3.1.6",
 		"@lastfm-viewer/vite-config": "workspace:*",
 		"@sveltejs/adapter-auto": "^3.2.2",
 		"@sveltejs/kit": "^2.5.17",
