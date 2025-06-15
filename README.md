@@ -1,4 +1,4 @@
-@lastfm-viewer/utils# @lastfm-viewer/svelte
+# @lastfm-viewer/svelte
 
 > [!NOTE]
 > This repository is now part of a monorepo if you want to start developing on it go to the original monorepo [here](https://github.com/ZOASR/lastfm-viewer)
@@ -60,7 +60,7 @@ to start using the component you first need to get a last.fm API key from [here]
 
 ```svelte
 <script>
-	import SvelteLastFmViewer from '@lastfm-viewer/svelte/SvelteLastFMViewer.svelte';
+	import SvelteLastFmViewer from '@lastfm-viewer/svelte';
 	import '@lastfm-viewer/ui/styles';
 	import '@lastfm-viewer/ui/styles/LastFMViewer.css';
 	import '@lastfm-viewer/ui/styles/PastTracks.css';
@@ -100,9 +100,6 @@ if you want to frequently fetch the user's listening info just specify the `upda
 	updateInterval={20000} {/* 20 seconds */}
 />
 ```
-
-> [!CAUTION]
-> setting the `updateInterval` prop to a low number might subject your api key for termination, to avoid this just use a higher more reasonable number.
 
 <p align="center">
 <img width="50%" src="./images/divider.svg" />
