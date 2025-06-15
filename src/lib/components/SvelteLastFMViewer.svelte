@@ -49,15 +49,15 @@
 		{:else}
 			<div>
 				<figure style:filter={`drop-shadow(0 0 20px ${colors?.coverShadowColor})`}>
-					<LoadingSkeleton fallback={null} className="mx-auto h-[300px] w-[300px]">
+					<LoadingSkeleton fallback={null} className="mx-auto aspect-square w-full">
 						{#if track.imageUrl}
 							<img src={track.imageUrl} alt="Album Cover" />
 						{:else}
 							<div
 								class:!animate-spin-slow={track.nowplaying}
-								class="h-[100px] [color:var(--default-secondary)] sm:h-[300px]"
+								class="sm:h-[300px] h-[100px] [color:var(--default-secondary)]"
 							>
-								<Icon icon="bi:disc-fill" class="w-full h-full" />
+								<Icon icon="bi:disc-fill" class="h-full w-full" />
 							</div>
 							<!-- <img src={disc} alt="Default album cover thumbnail" /> -->
 						{/if}
