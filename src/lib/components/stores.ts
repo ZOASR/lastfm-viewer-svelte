@@ -28,11 +28,24 @@ export const useLfmv = (user: string, updateInterval?: number) => {
 		}
 	};
 	get();
+	
+	// Validate updateInterval to be at least 2 seconds
+	const MIN_UPDATE_INTERVAL = 2000; // 2 seconds in milliseconds
+	const safeUpdateInterval = updateInterval 
+		? Math.max(updateInterval, MIN_UPDATE_INTERVAL)
+		: undefined;
+
+	if (updateInterval && updateInterval < MIN_UPDATE_INTERVAL) {
+		console.warn(
+			`updateInterval is too low. Using minimum allowed value of ${MIN_UPDATE_INTERVAL}ms to prevent rate limiting.`
+		);
+	}
+
 	let intervalRef: ReturnType<typeof setInterval>;
-	if (updateInterval && updateInterval > 0) {
+	if (safeUpdateInterval) {
 		intervalRef = setInterval(() => {
 			get();
-		}, updateInterval);
+		}, safeUpdateInterval);
 		return intervalRef;
 	}
 };
