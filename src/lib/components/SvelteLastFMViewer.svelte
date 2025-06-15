@@ -1,8 +1,28 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import type { SvelteComponent } from 'svelte';
 	import Iconify from '@iconify/svelte';
-	const Icon = Iconify as unknown as typeof SvelteComponent<{ icon: string; class?: string }>;
+	import type { SvelteComponentTyped } from 'svelte';
+
+	// Type assertion for the Icon component with all documented properties
+	const Icon = Iconify as unknown as typeof SvelteComponentTyped<{
+		// Required
+		icon: string;
+
+		// Optional properties from documentation
+		class?: string;
+		inline?: boolean;
+		width?: string | number;
+		height?: string | number;
+		hFlip?: boolean;
+		vFlip?: boolean;
+		flip?: string;
+		rotate?: number | string;
+		color?: string;
+		onLoad?: () => void;
+
+		// Allow any other additional props
+		[key: string]: any;
+	}>;
 
 	import ErrorView from './ErrorView/ErrorView.svelte';
 	import TrackProgressBar from './TrackProgressBar/TrackProgressBar.svelte';
