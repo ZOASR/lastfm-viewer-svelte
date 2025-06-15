@@ -4,9 +4,45 @@ All notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
+### Bug Fixes
+
+- Removed tailwind content config to avoid generating extra styles during dev
+
+### Documentation
+
+- Update README to include @lastfm-viewer/utils in installation instructions
+- Update README to reflect changes in package import and remove caution note about updateInterval
+
+### Features
+
+- Add validation for updateInterval in useLfmv hook
+
+### Miscellaneous Tasks
+
+- Move @iconify/svelte to devDependencies in package.json
+
+### Performance
+
+- Optimize Svelte build to skip SvelteKit server build
+
+### Refactor
+
+- Enhance type definitions for Icon component in SvelteLastFMViewer
+- Update ErrorView component to accept Error object instead of message string
+
+### Ui
+
+- Fix wrong size for album cover size skeleton when loading
+
+## [4.0.1] - 2025-06-11
+
 ### Documentation
 
 - Update README to remove api_key references from SvelteLastFmViewer usage
+
+### Update
+
+- V4.0.1
 
 ## [4.0.0] - 2025-06-11
 
