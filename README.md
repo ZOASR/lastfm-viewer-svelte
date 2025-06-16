@@ -60,7 +60,7 @@ to start using the component you first need to get a last.fm API key from [here]
 
 ```svelte
 <script>
-	import SvelteLastFmViewer from '@lastfm-viewer/svelte';
+	import { SvelteLastFMViewer } from '@lastfm-viewer/svelte';
 	import '@lastfm-viewer/ui/styles';
 	import '@lastfm-viewer/ui/styles/LastFMViewer.css';
 	import '@lastfm-viewer/ui/styles/PastTracks.css';
@@ -69,7 +69,7 @@ to start using the component you first need to get a last.fm API key from [here]
 	import '@lastfm-viewer/ui/styles/ErrorView.css';
 </script>
 
-<SvelteLastFmViewer user="[username]" />
+<SvelteLastFMViewer user="[username]" />
 ```
 
 <p align="center">
@@ -92,10 +92,10 @@ if you want to frequently fetch the user's listening info just specify the `upda
 
 ```svelte
 <script>
-	import SvelteLastFmViewer from "@lastfm-viewer/svelte/SvelteLastFMViewer.svelte";
+	import { SvelteLastFMViewer } from "@lastfm-viewer/svelte";
 </script>
 
-<SvelteLastFmViewer
+<SvelteLastFMViewer
 	user="[username]"
 	updateInterval={20000} {/* 20 seconds */}
 />
