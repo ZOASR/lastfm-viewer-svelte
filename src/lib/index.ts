@@ -1,1 +1,1 @@
-export * from './components/SvelteLastFMViewer.svelte';
+export { default as SvelteLastFMViewer } from './components/SvelteLastFMViewer.svelte';
