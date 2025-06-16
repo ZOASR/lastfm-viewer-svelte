@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
+### Documentation
+
+- Correct import syntax for SvelteLastFMViewer in README.md
+
+### Refactor
+
+- Update export syntax for SvelteLastFMViewer component to use default export
+
+## [5.0.0] - 2025-06-15
+
 ### Bug Fixes
 
 - Removed tailwind content config to avoid generating extra styles during dev
@@ -33,6 +43,10 @@ All notable changes to this project will be documented in this file.
 ### Ui
 
 - Fix wrong size for album cover size skeleton when loading
+
+### Update
+
+- V5.0.0
 
 ## [4.0.1] - 2025-06-11
 
